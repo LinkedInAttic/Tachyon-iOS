@@ -1,0 +1,21 @@
+# Build Directory
+.DS_Store
+DerivedData
+output/*
+# User Data
+*.pbxuser
+xcuserdata
+xcuserstate
+profile
+!default.pbxuser
+# Workspace
+*.xcworkspace
+!default.xcworkspace
+*.moved-aside
+# CocoaPods
+Podfile.lock
+Pods
+# configs
+config/
+# Other files to ignore
+

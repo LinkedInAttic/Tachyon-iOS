@@ -1,0 +1,1189 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B01C1F21CB86CF700A6BA19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B01C1F11CB86CF700A6BA19 /* AppDelegate.swift */; };
+		0B01C1F41CB86CF700A6BA19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B01C1F31CB86CF700A6BA19 /* ViewController.swift */; };
+		0B01C1F91CB86CF700A6BA19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B01C1F81CB86CF700A6BA19 /* Assets.xcassets */; };
+		0B01C2031CB86D1300A6BA19 /* libTachyon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B01C1D01CB86C3700A6BA19 /* libTachyon.a */; };
+		0B01C2081CB86E4D00A6BA19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B01C2071CB86E4D00A6BA19 /* LaunchScreen.xib */; };
+		525D81084E6D197D0F06D69E /* Pods_TachyonSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539F5795600E54578F0B33E4 /* Pods_TachyonSampleApp.framework */; };
+		7EBB3E42F4F35DBFBBD8E1F7 /* Pods_TachyonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42BDDEEEA092EDBE61B5CF2 /* Pods_TachyonTests.framework */; };
+		A11E7A7E225D48B3003FAB5D /* TCNDayViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E7A7D225D48B3003FAB5D /* TCNDayViewTests.m */; };
+		A11E7A81225D5800003FAB5D /* TCNDayViewTestsViewProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E7A80225D5800003FAB5D /* TCNDayViewTestsViewProvider.m */; };
+		A11E7A83225ECD89003FAB5D /* TCNEventCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E7A82225ECD89003FAB5D /* TCNEventCellTests.m */; };
+		A11E7A8B225ECF86003FAB5D /* TCNTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E7A8A225ECF86003FAB5D /* TCNTestUtils.m */; };
+		A16A7632225FB0AB00ACF6BC /* TachyonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16A7631225FB0AB00ACF6BC /* TachyonUITests.swift */; };
+		A17F1C6B22162E400026939B /* SampleEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F1C6A22162E400026939B /* SampleEvents.swift */; };
+		A18DC41B22372C02002812B3 /* libTachyon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B01C1D01CB86C3700A6BA19 /* libTachyon.a */; };
+		A18DC42322372DF6002812B3 /* TCNEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18DC42222372DF6002812B3 /* TCNEventTests.swift */; };
+		A1D158902249B285008A4E50 /* TCNAllDayViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D158882249B284008A4E50 /* TCNAllDayViewLayout.m */; };
+		A1D158912249B285008A4E50 /* TCNDecorationViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D1588D2249B285008A4E50 /* TCNDecorationViewLayoutAttributes.m */; };
+		A1D158922249B285008A4E50 /* TCNDayViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D1588E2249B285008A4E50 /* TCNDayViewLayout.m */; };
+		A1D158932249B285008A4E50 /* TCNDatePickerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D1588F2249B285008A4E50 /* TCNDatePickerLayout.m */; };
+		A1D158962249B290008A4E50 /* TCNDatePickerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D158952249B290008A4E50 /* TCNDatePickerDataSource.m */; };
+		A1D158A12249B29F008A4E50 /* TCNEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D158982249B29E008A4E50 /* TCNEventCell.m */; };
+		A1D158A22249B29F008A4E50 /* TCNDayViewGridlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D1589A2249B29E008A4E50 /* TCNDayViewGridlineView.m */; };
+		A1D158A32249B29F008A4E50 /* TCNDatePickerDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D1589D2249B29E008A4E50 /* TCNDatePickerDayView.m */; };
+		A1D158A42249B29F008A4E50 /* TCNDayViewTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D1589E2249B29E008A4E50 /* TCNDayViewTimeView.m */; };
+		A1D158A52249B29F008A4E50 /* TCNDatePickerSelectionIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D158A02249B29F008A4E50 /* TCNDatePickerSelectionIndicatorView.m */; };
+		A1D158AB2249B2AA008A4E50 /* TCNDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D158A72249B2AA008A4E50 /* TCNDateFormatter.m */; };
+		A1D158AC2249B2AA008A4E50 /* TCNNumberHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D158AA2249B2AA008A4E50 /* TCNNumberHelper.m */; };
+		A1D158AF2249B2B6008A4E50 /* TCNEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D158AE2249B2B6008A4E50 /* TCNEvent.m */; };
+		A1D158BB2249B2C2008A4E50 /* TCNDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D158B22249B2C2008A4E50 /* TCNDayView.m */; };
+		A1D158BC2249B2C2008A4E50 /* TCNDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D158B52249B2C2008A4E50 /* TCNDatePickerView.m */; };
+		A1D158BD2249B2C2008A4E50 /* TCNDatePickerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D158B62249B2C2008A4E50 /* TCNDatePickerConfig.m */; };
+		A1D158BE2249B2C2008A4E50 /* TCNDayViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D158B82249B2C2008A4E50 /* TCNDayViewConfig.m */; };
+		A1D158BF2249B2C2008A4E50 /* TCNDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D158BA2249B2C2008A4E50 /* TCNDateUtil.m */; };
+		A1D158DE224EE065008A4E50 /* TCNDatePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A418CDB21FA61A50049DA37 /* TCNDatePickerTests.m */; };
+		A1D158DF224EE065008A4E50 /* TCNDateUtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A418CDD21FA66990049DA37 /* TCNDateUtilTests.m */; };
+		AA4DDEDC4BA9CF2B290C9D35 /* Pods_Tachyon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E0C3F76FD5A46ED95B1F478 /* Pods_Tachyon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B01C2011CB86D0F00A6BA19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B01C1C81CB86C3700A6BA19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B01C1CF1CB86C3700A6BA19;
+			remoteInfo = TachyonUI;
+		};
+		A16A762B225FAEBF00ACF6BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B01C1C81CB86C3700A6BA19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B01C1EE1CB86CF700A6BA19;
+			remoteInfo = TachyonSampleApp;
+		};
+		A18DC41C22372C02002812B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B01C1C81CB86C3700A6BA19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B01C1CF1CB86C3700A6BA19;
+			remoteInfo = TachyonUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0B01C1CE1CB86C3700A6BA19 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B01C1D01CB86C3700A6BA19 /* libTachyon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTachyon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B01C1EF1CB86CF700A6BA19 /* TachyonSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TachyonSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B01C1F11CB86CF700A6BA19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B01C1F31CB86CF700A6BA19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B01C1F81CB86CF700A6BA19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B01C1FD1CB86CF700A6BA19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B01C2041CB86D6200A6BA19 /* Tachyon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tachyon-Bridging-Header.h"; sourceTree = "<group>"; };
+		0B01C2071CB86E4D00A6BA19 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		3785AD2D8D34BBF5A6688516 /* Pods-TachyonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TachyonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TachyonTests/Pods-TachyonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D7332797EED90BC5BB2D811 /* Pods-TachyonSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TachyonSampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TachyonSampleApp/Pods-TachyonSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		539F5795600E54578F0B33E4 /* Pods_TachyonSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TachyonSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62581D338BEA300690517415 /* Pods_TachyonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TachyonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		694715D291C7837492491BF5 /* Pods-Tachyon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tachyon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tachyon/Pods-Tachyon.release.xcconfig"; sourceTree = "<group>"; };
+		7369C165CA5865902C167A89 /* Pods-TachyonSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TachyonSampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TachyonSampleApp/Pods-TachyonSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		752A5760F42ADD454BE60E1D /* Pods-TachyonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TachyonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TachyonUITests/Pods-TachyonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		86BFE37992D804534E662D4C /* Pods-Tachyon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tachyon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tachyon/Pods-Tachyon.debug.xcconfig"; sourceTree = "<group>"; };
+		8A9BE750B8E76E13488187C3 /* Pods-TachyonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TachyonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TachyonUITests/Pods-TachyonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A418CDB21FA61A50049DA37 /* TCNDatePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCNDatePickerTests.m; sourceTree = "<group>"; };
+		9A418CDD21FA66990049DA37 /* TCNDateUtilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCNDateUtilTests.m; sourceTree = "<group>"; };
+		9E0C3F76FD5A46ED95B1F478 /* Pods_Tachyon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tachyon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11E7A7D225D48B3003FAB5D /* TCNDayViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCNDayViewTests.m; sourceTree = "<group>"; };
+		A11E7A7F225D5800003FAB5D /* TCNDayViewTestsViewProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCNDayViewTestsViewProvider.h; sourceTree = "<group>"; };
+		A11E7A80225D5800003FAB5D /* TCNDayViewTestsViewProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCNDayViewTestsViewProvider.m; sourceTree = "<group>"; };
+		A11E7A82225ECD89003FAB5D /* TCNEventCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCNEventCellTests.m; sourceTree = "<group>"; };
+		A11E7A89225ECF86003FAB5D /* TCNTestUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCNTestUtils.h; sourceTree = "<group>"; };
+		A11E7A8A225ECF86003FAB5D /* TCNTestUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCNTestUtils.m; sourceTree = "<group>"; };
+		A12063172298AC0900DE658E /* TCNDateFormatter+Testing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TCNDateFormatter+Testing.h"; sourceTree = "<group>"; };
+		A12063182298B62400DE658E /* TCNReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCNReusableView.h; sourceTree = "<group>"; };
+		A16A7626225FAEBF00ACF6BC /* TachyonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TachyonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A16A762A225FAEBF00ACF6BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A16A7630225FB0AA00ACF6BC /* TachyonUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TachyonUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		A16A7631225FB0AB00ACF6BC /* TachyonUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TachyonUITests.swift; sourceTree = "<group>"; };
+		A17F1C6A22162E400026939B /* SampleEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleEvents.swift; sourceTree = "<group>"; };
+		A18DC41622372C02002812B3 /* TachyonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TachyonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A18DC41A22372C02002812B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A18DC42122372DF5002812B3 /* TachyonTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TachyonTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		A18DC42222372DF6002812B3 /* TCNEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCNEventTests.swift; sourceTree = "<group>"; };
+		A1D158882249B284008A4E50 /* TCNAllDayViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNAllDayViewLayout.m; sourceTree = "<group>"; };
+		A1D158892249B285008A4E50 /* TCNDayViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNDayViewLayout.h; sourceTree = "<group>"; };
+		A1D1588A2249B285008A4E50 /* TCNAllDayViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNAllDayViewLayout.h; sourceTree = "<group>"; };
+		A1D1588B2249B285008A4E50 /* TCNDatePickerLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNDatePickerLayout.h; sourceTree = "<group>"; };
+		A1D1588C2249B285008A4E50 /* TCNDecorationViewLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNDecorationViewLayoutAttributes.h; sourceTree = "<group>"; };
+		A1D1588D2249B285008A4E50 /* TCNDecorationViewLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNDecorationViewLayoutAttributes.m; sourceTree = "<group>"; };
+		A1D1588E2249B285008A4E50 /* TCNDayViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNDayViewLayout.m; sourceTree = "<group>"; };
+		A1D1588F2249B285008A4E50 /* TCNDatePickerLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNDatePickerLayout.m; sourceTree = "<group>"; };
+		A1D158942249B290008A4E50 /* TCNDatePickerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNDatePickerDataSource.h; sourceTree = "<group>"; };
+		A1D158952249B290008A4E50 /* TCNDatePickerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNDatePickerDataSource.m; sourceTree = "<group>"; };
+		A1D158972249B29E008A4E50 /* TCNDatePickerSelectionIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNDatePickerSelectionIndicatorView.h; sourceTree = "<group>"; };
+		A1D158982249B29E008A4E50 /* TCNEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNEventCell.m; sourceTree = "<group>"; };
+		A1D158992249B29E008A4E50 /* TCNDayViewTimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNDayViewTimeView.h; sourceTree = "<group>"; };
+		A1D1589A2249B29E008A4E50 /* TCNDayViewGridlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNDayViewGridlineView.m; sourceTree = "<group>"; };
+		A1D1589B2249B29E008A4E50 /* TCNEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNEventCell.h; sourceTree = "<group>"; };
+		A1D1589C2249B29E008A4E50 /* TCNDayViewGridlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNDayViewGridlineView.h; sourceTree = "<group>"; };
+		A1D1589D2249B29E008A4E50 /* TCNDatePickerDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNDatePickerDayView.m; sourceTree = "<group>"; };
+		A1D1589E2249B29E008A4E50 /* TCNDayViewTimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNDayViewTimeView.m; sourceTree = "<group>"; };
+		A1D1589F2249B29F008A4E50 /* TCNDatePickerDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNDatePickerDayView.h; sourceTree = "<group>"; };
+		A1D158A02249B29F008A4E50 /* TCNDatePickerSelectionIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNDatePickerSelectionIndicatorView.m; sourceTree = "<group>"; };
+		A1D158A62249B2AA008A4E50 /* TCNDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNDateFormatter.h; sourceTree = "<group>"; };
+		A1D158A72249B2AA008A4E50 /* TCNDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNDateFormatter.m; sourceTree = "<group>"; };
+		A1D158A82249B2AA008A4E50 /* TCNNumberHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNNumberHelper.h; sourceTree = "<group>"; };
+		A1D158A92249B2AA008A4E50 /* TCNMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNMacros.h; sourceTree = "<group>"; };
+		A1D158AA2249B2AA008A4E50 /* TCNNumberHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNNumberHelper.m; sourceTree = "<group>"; };
+		A1D158AD2249B2B6008A4E50 /* TCNEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNEvent.h; sourceTree = "<group>"; };
+		A1D158AE2249B2B6008A4E50 /* TCNEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNEvent.m; sourceTree = "<group>"; };
+		A1D158B02249B2C1008A4E50 /* TCNDatePickerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNDatePickerConfig.h; sourceTree = "<group>"; };
+		A1D158B12249B2C1008A4E50 /* TCNDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNDayView.h; sourceTree = "<group>"; };
+		A1D158B22249B2C2008A4E50 /* TCNDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNDayView.m; sourceTree = "<group>"; };
+		A1D158B32249B2C2008A4E50 /* TCNDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNDatePickerView.h; sourceTree = "<group>"; };
+		A1D158B42249B2C2008A4E50 /* TCNDateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNDateUtil.h; sourceTree = "<group>"; };
+		A1D158B52249B2C2008A4E50 /* TCNDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNDatePickerView.m; sourceTree = "<group>"; };
+		A1D158B62249B2C2008A4E50 /* TCNDatePickerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNDatePickerConfig.m; sourceTree = "<group>"; };
+		A1D158B72249B2C2008A4E50 /* TCNDayViewConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNDayViewConfig.h; sourceTree = "<group>"; };
+		A1D158B82249B2C2008A4E50 /* TCNDayViewConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNDayViewConfig.m; sourceTree = "<group>"; };
+		A1D158B92249B2C2008A4E50 /* Tachyon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tachyon.h; sourceTree = "<group>"; };
+		A1D158BA2249B2C2008A4E50 /* TCNDateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNDateUtil.m; sourceTree = "<group>"; };
+		A1E8D3C7221E18BA001CA288 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C32F67A9B0FA2E4360FF2301 /* Pods-TachyonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TachyonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TachyonTests/Pods-TachyonTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE98AE4F224D913000A47577 /* TCNDayViewLayout+Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TCNDayViewLayout+Protected.h"; sourceTree = "<group>"; };
+		F42BDDEEEA092EDBE61B5CF2 /* Pods_TachyonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TachyonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B01C1CD1CB86C3700A6BA19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4DDEDC4BA9CF2B290C9D35 /* Pods_Tachyon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B01C1EC1CB86CF700A6BA19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B01C2031CB86D1300A6BA19 /* libTachyon.a in Frameworks */,
+				525D81084E6D197D0F06D69E /* Pods_TachyonSampleApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16A7623225FAEBF00ACF6BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18DC41322372C02002812B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18DC41B22372C02002812B3 /* libTachyon.a in Frameworks */,
+				7EBB3E42F4F35DBFBBD8E1F7 /* Pods_TachyonTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B01C1C71CB86C3700A6BA19 = {
+			isa = PBXGroup;
+			children = (
+				0B01C1D21CB86C3700A6BA19 /* Tachyon */,
+				0B01C1F01CB86CF700A6BA19 /* TachyonSampleApp */,
+				A18DC41722372C02002812B3 /* TachyonTests */,
+				A16A7627225FAEBF00ACF6BC /* TachyonUITests */,
+				0B01C1D11CB86C3700A6BA19 /* Products */,
+				47A176EEAE1924C10BFCFF52 /* Pods */,
+				7E2F4245A247440E45A76E34 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0B01C1D11CB86C3700A6BA19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B01C1D01CB86C3700A6BA19 /* libTachyon.a */,
+				0B01C1EF1CB86CF700A6BA19 /* TachyonSampleApp.app */,
+				A18DC41622372C02002812B3 /* TachyonTests.xctest */,
+				A16A7626225FAEBF00ACF6BC /* TachyonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B01C1D21CB86C3700A6BA19 /* Tachyon */ = {
+			isa = PBXGroup;
+			children = (
+				9A418CD721F7E46C0049DA37 /* CollectionViewLayouts */,
+				9A418CD321F7BF060049DA37 /* DataSources */,
+				9A418CCF21F7A7FA0049DA37 /* Views */,
+				9A418CCE21F7A7570049DA37 /* Helpers */,
+				9A418CCD21F7A7460049DA37 /* Public API */,
+				A1E8D3C6221E1887001CA288 /* Resources */,
+			);
+			path = Tachyon;
+			sourceTree = "<group>";
+		};
+		0B01C1F01CB86CF700A6BA19 /* TachyonSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				0B01C1F11CB86CF700A6BA19 /* AppDelegate.swift */,
+				0B01C1F31CB86CF700A6BA19 /* ViewController.swift */,
+				A17F1C6A22162E400026939B /* SampleEvents.swift */,
+				0B01C1F81CB86CF700A6BA19 /* Assets.xcassets */,
+				0B01C1FD1CB86CF700A6BA19 /* Info.plist */,
+				0B01C2041CB86D6200A6BA19 /* Tachyon-Bridging-Header.h */,
+				0B01C2071CB86E4D00A6BA19 /* LaunchScreen.xib */,
+			);
+			path = TachyonSampleApp;
+			sourceTree = "<group>";
+		};
+		47A176EEAE1924C10BFCFF52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86BFE37992D804534E662D4C /* Pods-Tachyon.debug.xcconfig */,
+				694715D291C7837492491BF5 /* Pods-Tachyon.release.xcconfig */,
+				3D7332797EED90BC5BB2D811 /* Pods-TachyonSampleApp.debug.xcconfig */,
+				7369C165CA5865902C167A89 /* Pods-TachyonSampleApp.release.xcconfig */,
+				3785AD2D8D34BBF5A6688516 /* Pods-TachyonTests.debug.xcconfig */,
+				C32F67A9B0FA2E4360FF2301 /* Pods-TachyonTests.release.xcconfig */,
+				8A9BE750B8E76E13488187C3 /* Pods-TachyonUITests.debug.xcconfig */,
+				752A5760F42ADD454BE60E1D /* Pods-TachyonUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E2F4245A247440E45A76E34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E0C3F76FD5A46ED95B1F478 /* Pods_Tachyon.framework */,
+				539F5795600E54578F0B33E4 /* Pods_TachyonSampleApp.framework */,
+				F42BDDEEEA092EDBE61B5CF2 /* Pods_TachyonTests.framework */,
+				62581D338BEA300690517415 /* Pods_TachyonUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A385686220BF4180040DE60 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1D158AD2249B2B6008A4E50 /* TCNEvent.h */,
+				A1D158AE2249B2B6008A4E50 /* TCNEvent.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9A418CCD21F7A7460049DA37 /* Public API */ = {
+			isa = PBXGroup;
+			children = (
+				9A385686220BF4180040DE60 /* Models */,
+				A1D158B02249B2C1008A4E50 /* TCNDatePickerConfig.h */,
+				A1D158B62249B2C2008A4E50 /* TCNDatePickerConfig.m */,
+				A1D158B32249B2C2008A4E50 /* TCNDatePickerView.h */,
+				A1D158B52249B2C2008A4E50 /* TCNDatePickerView.m */,
+				A1D158B42249B2C2008A4E50 /* TCNDateUtil.h */,
+				A1D158BA2249B2C2008A4E50 /* TCNDateUtil.m */,
+				A1D158B12249B2C1008A4E50 /* TCNDayView.h */,
+				A1D158B22249B2C2008A4E50 /* TCNDayView.m */,
+				A1D158B72249B2C2008A4E50 /* TCNDayViewConfig.h */,
+				A1D158B82249B2C2008A4E50 /* TCNDayViewConfig.m */,
+				A1D158B92249B2C2008A4E50 /* Tachyon.h */,
+			);
+			path = "Public API";
+			sourceTree = "<group>";
+		};
+		9A418CCE21F7A7570049DA37 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A1D158A62249B2AA008A4E50 /* TCNDateFormatter.h */,
+				A12063172298AC0900DE658E /* TCNDateFormatter+Testing.h */,
+				A1D158A72249B2AA008A4E50 /* TCNDateFormatter.m */,
+				A1D158A92249B2AA008A4E50 /* TCNMacros.h */,
+				A1D158A82249B2AA008A4E50 /* TCNNumberHelper.h */,
+				A1D158AA2249B2AA008A4E50 /* TCNNumberHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9A418CCF21F7A7FA0049DA37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1D1589F2249B29F008A4E50 /* TCNDatePickerDayView.h */,
+				A1D1589D2249B29E008A4E50 /* TCNDatePickerDayView.m */,
+				A1D158972249B29E008A4E50 /* TCNDatePickerSelectionIndicatorView.h */,
+				A1D158A02249B29F008A4E50 /* TCNDatePickerSelectionIndicatorView.m */,
+				A1D1589C2249B29E008A4E50 /* TCNDayViewGridlineView.h */,
+				A1D1589A2249B29E008A4E50 /* TCNDayViewGridlineView.m */,
+				A1D158992249B29E008A4E50 /* TCNDayViewTimeView.h */,
+				A1D1589E2249B29E008A4E50 /* TCNDayViewTimeView.m */,
+				A1D1589B2249B29E008A4E50 /* TCNEventCell.h */,
+				A1D158982249B29E008A4E50 /* TCNEventCell.m */,
+				A12063182298B62400DE658E /* TCNReusableView.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A418CD321F7BF060049DA37 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				A1D158942249B290008A4E50 /* TCNDatePickerDataSource.h */,
+				A1D158952249B290008A4E50 /* TCNDatePickerDataSource.m */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		9A418CD721F7E46C0049DA37 /* CollectionViewLayouts */ = {
+			isa = PBXGroup;
+			children = (
+				A1D1588A2249B285008A4E50 /* TCNAllDayViewLayout.h */,
+				A1D158882249B284008A4E50 /* TCNAllDayViewLayout.m */,
+				A1D1588B2249B285008A4E50 /* TCNDatePickerLayout.h */,
+				A1D1588F2249B285008A4E50 /* TCNDatePickerLayout.m */,
+				A1D158892249B285008A4E50 /* TCNDayViewLayout.h */,
+				CE98AE4F224D913000A47577 /* TCNDayViewLayout+Protected.h */,
+				A1D1588E2249B285008A4E50 /* TCNDayViewLayout.m */,
+				A1D1588C2249B285008A4E50 /* TCNDecorationViewLayoutAttributes.h */,
+				A1D1588D2249B285008A4E50 /* TCNDecorationViewLayoutAttributes.m */,
+			);
+			path = CollectionViewLayouts;
+			sourceTree = "<group>";
+		};
+		A11E7A84225ECD8E003FAB5D /* Day View */ = {
+			isa = PBXGroup;
+			children = (
+				A11E7A82225ECD89003FAB5D /* TCNEventCellTests.m */,
+				A11E7A7D225D48B3003FAB5D /* TCNDayViewTests.m */,
+				A11E7A7F225D5800003FAB5D /* TCNDayViewTestsViewProvider.h */,
+				A11E7A80225D5800003FAB5D /* TCNDayViewTestsViewProvider.m */,
+			);
+			path = "Day View";
+			sourceTree = "<group>";
+		};
+		A11E7A85225ECD99003FAB5D /* Date Picker */ = {
+			isa = PBXGroup;
+			children = (
+				9A418CDB21FA61A50049DA37 /* TCNDatePickerTests.m */,
+			);
+			path = "Date Picker";
+			sourceTree = "<group>";
+		};
+		A11E7A86225ECDBE003FAB5D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A18DC42222372DF6002812B3 /* TCNEventTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A11E7A87225ECDD5003FAB5D /* Test Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A11E7A89225ECF86003FAB5D /* TCNTestUtils.h */,
+				A11E7A8A225ECF86003FAB5D /* TCNTestUtils.m */,
+			);
+			path = "Test Utilities";
+			sourceTree = "<group>";
+		};
+		A11E7A88225ECF67003FAB5D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				9A418CDD21FA66990049DA37 /* TCNDateUtilTests.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		A16A7627225FAEBF00ACF6BC /* TachyonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A16A7631225FB0AB00ACF6BC /* TachyonUITests.swift */,
+				A16A7630225FB0AA00ACF6BC /* TachyonUITests-Bridging-Header.h */,
+				A16A762A225FAEBF00ACF6BC /* Info.plist */,
+			);
+			path = TachyonUITests;
+			sourceTree = "<group>";
+		};
+		A18DC41722372C02002812B3 /* TachyonTests */ = {
+			isa = PBXGroup;
+			children = (
+				A11E7A88225ECF67003FAB5D /* Other */,
+				A11E7A87225ECDD5003FAB5D /* Test Utilities */,
+				A11E7A86225ECDBE003FAB5D /* Models */,
+				A11E7A85225ECD99003FAB5D /* Date Picker */,
+				A18DC41A22372C02002812B3 /* Info.plist */,
+				A11E7A84225ECD8E003FAB5D /* Day View */,
+				A18DC42122372DF5002812B3 /* TachyonTests-Bridging-Header.h */,
+			);
+			path = TachyonTests;
+			sourceTree = "<group>";
+		};
+		A1E8D3C6221E1887001CA288 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1E8D3C7221E18BA001CA288 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B01C1CF1CB86C3700A6BA19 /* Tachyon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B01C1D91CB86C3700A6BA19 /* Build configuration list for PBXNativeTarget "Tachyon" */;
+			buildPhases = (
+				7B938AD6EF0AC1D104301BD3 /* [CP] Check Pods Manifest.lock */,
+				0B01C1CC1CB86C3700A6BA19 /* Sources */,
+				0B01C1CD1CB86C3700A6BA19 /* Frameworks */,
+				0B01C1CE1CB86C3700A6BA19 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tachyon;
+			productName = Tachyon;
+			productReference = 0B01C1D01CB86C3700A6BA19 /* libTachyon.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0B01C1EE1CB86CF700A6BA19 /* TachyonSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B01C1FE1CB86CF700A6BA19 /* Build configuration list for PBXNativeTarget "TachyonSampleApp" */;
+			buildPhases = (
+				F6B551E6A164DD7D4AEC8706 /* [CP] Check Pods Manifest.lock */,
+				0B01C1EB1CB86CF700A6BA19 /* Sources */,
+				0B01C1EC1CB86CF700A6BA19 /* Frameworks */,
+				0B01C1ED1CB86CF700A6BA19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B01C2021CB86D0F00A6BA19 /* PBXTargetDependency */,
+			);
+			name = TachyonSampleApp;
+			productName = TachyonSampleApp;
+			productReference = 0B01C1EF1CB86CF700A6BA19 /* TachyonSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A16A7625225FAEBF00ACF6BC /* TachyonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A16A762D225FAEBF00ACF6BC /* Build configuration list for PBXNativeTarget "TachyonUITests" */;
+			buildPhases = (
+				A16A7622225FAEBF00ACF6BC /* Sources */,
+				A16A7623225FAEBF00ACF6BC /* Frameworks */,
+				A16A7624225FAEBF00ACF6BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A16A762C225FAEBF00ACF6BC /* PBXTargetDependency */,
+			);
+			name = TachyonUITests;
+			productName = TachyonUITests;
+			productReference = A16A7626225FAEBF00ACF6BC /* TachyonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A18DC41522372C02002812B3 /* TachyonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A18DC42022372C02002812B3 /* Build configuration list for PBXNativeTarget "TachyonTests" */;
+			buildPhases = (
+				32D42CA9DAA4F0A77F1554C8 /* [CP] Check Pods Manifest.lock */,
+				A18DC41222372C02002812B3 /* Sources */,
+				A18DC41322372C02002812B3 /* Frameworks */,
+				A18DC41422372C02002812B3 /* Resources */,
+				51B4D63A20A4C86572D35EB3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A18DC41D22372C02002812B3 /* PBXTargetDependency */,
+			);
+			name = TachyonTests;
+			productName = TachyonTests;
+			productReference = A18DC41622372C02002812B3 /* TachyonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B01C1C81CB86C3700A6BA19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = LinkedIn;
+				TargetAttributes = {
+					0B01C1CF1CB86C3700A6BA19 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 57Y47U492U;
+					};
+					0B01C1EE1CB86CF700A6BA19 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 57Y47U492U;
+						LastSwiftMigration = 1010;
+					};
+					A16A7625225FAEBF00ACF6BC = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 57Y47U492U;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B01C1EE1CB86CF700A6BA19;
+					};
+					A18DC41522372C02002812B3 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 0B01C1CB1CB86C3700A6BA19 /* Build configuration list for PBXProject "Tachyon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B01C1C71CB86C3700A6BA19;
+			productRefGroup = 0B01C1D11CB86C3700A6BA19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B01C1CF1CB86C3700A6BA19 /* Tachyon */,
+				0B01C1EE1CB86CF700A6BA19 /* TachyonSampleApp */,
+				A18DC41522372C02002812B3 /* TachyonTests */,
+				A16A7625225FAEBF00ACF6BC /* TachyonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B01C1ED1CB86CF700A6BA19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B01C2081CB86E4D00A6BA19 /* LaunchScreen.xib in Resources */,
+				0B01C1F91CB86CF700A6BA19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16A7624225FAEBF00ACF6BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18DC41422372C02002812B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32D42CA9DAA4F0A77F1554C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TachyonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51B4D63A20A4C86572D35EB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TachyonTests/Pods-TachyonTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LayoutTest/LayoutTest.framework",
+				"${BUILT_PRODUCTS_DIR}/LayoutTestBase/LayoutTestBase.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LayoutTest.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LayoutTestBase.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TachyonTests/Pods-TachyonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B938AD6EF0AC1D104301BD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tachyon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6B551E6A164DD7D4AEC8706 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TachyonSampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B01C1CC1CB86C3700A6BA19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D158A42249B29F008A4E50 /* TCNDayViewTimeView.m in Sources */,
+				A1D158912249B285008A4E50 /* TCNDecorationViewLayoutAttributes.m in Sources */,
+				A1D158BD2249B2C2008A4E50 /* TCNDatePickerConfig.m in Sources */,
+				A1D158AC2249B2AA008A4E50 /* TCNNumberHelper.m in Sources */,
+				A1D158922249B285008A4E50 /* TCNDayViewLayout.m in Sources */,
+				A1D158A22249B29F008A4E50 /* TCNDayViewGridlineView.m in Sources */,
+				A1D158A52249B29F008A4E50 /* TCNDatePickerSelectionIndicatorView.m in Sources */,
+				A1D158BC2249B2C2008A4E50 /* TCNDatePickerView.m in Sources */,
+				A1D158AF2249B2B6008A4E50 /* TCNEvent.m in Sources */,
+				A1D158A12249B29F008A4E50 /* TCNEventCell.m in Sources */,
+				A1D158932249B285008A4E50 /* TCNDatePickerLayout.m in Sources */,
+				A1D158BE2249B2C2008A4E50 /* TCNDayViewConfig.m in Sources */,
+				A1D158BF2249B2C2008A4E50 /* TCNDateUtil.m in Sources */,
+				A1D158962249B290008A4E50 /* TCNDatePickerDataSource.m in Sources */,
+				A1D158A32249B29F008A4E50 /* TCNDatePickerDayView.m in Sources */,
+				A1D158AB2249B2AA008A4E50 /* TCNDateFormatter.m in Sources */,
+				A1D158BB2249B2C2008A4E50 /* TCNDayView.m in Sources */,
+				A1D158902249B285008A4E50 /* TCNAllDayViewLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B01C1EB1CB86CF700A6BA19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B01C1F41CB86CF700A6BA19 /* ViewController.swift in Sources */,
+				A17F1C6B22162E400026939B /* SampleEvents.swift in Sources */,
+				0B01C1F21CB86CF700A6BA19 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16A7622225FAEBF00ACF6BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16A7632225FB0AB00ACF6BC /* TachyonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18DC41222372C02002812B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11E7A8B225ECF86003FAB5D /* TCNTestUtils.m in Sources */,
+				A18DC42322372DF6002812B3 /* TCNEventTests.swift in Sources */,
+				A11E7A7E225D48B3003FAB5D /* TCNDayViewTests.m in Sources */,
+				A11E7A83225ECD89003FAB5D /* TCNEventCellTests.m in Sources */,
+				A1D158DF224EE065008A4E50 /* TCNDateUtilTests.m in Sources */,
+				A1D158DE224EE065008A4E50 /* TCNDatePickerTests.m in Sources */,
+				A11E7A81225D5800003FAB5D /* TCNDayViewTestsViewProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B01C2021CB86D0F00A6BA19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B01C1CF1CB86C3700A6BA19 /* Tachyon */;
+			targetProxy = 0B01C2011CB86D0F00A6BA19 /* PBXContainerItemProxy */;
+		};
+		A16A762C225FAEBF00ACF6BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B01C1EE1CB86CF700A6BA19 /* TachyonSampleApp */;
+			targetProxy = A16A762B225FAEBF00ACF6BC /* PBXContainerItemProxy */;
+		};
+		A18DC41D22372C02002812B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B01C1CF1CB86C3700A6BA19 /* Tachyon */;
+			targetProxy = A18DC41C22372C02002812B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B01C1D71CB86C3700A6BA19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0B01C1D81CB86C3700A6BA19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		0B01C1DA1CB86C3700A6BA19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86BFE37992D804534E662D4C /* Pods-Tachyon.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_COMMA = NO;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES_ERROR;
+				CLANG_WARN_OBJC_INTERFACE_IVARS = YES_ERROR;
+				CLANG_WARN_SEMICOLON_BEFORE_METHOD_BODY = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES_AGGRESSIVE;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0B01C1DB1CB86C3700A6BA19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 694715D291C7837492491BF5 /* Pods-Tachyon.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_COMMA = NO;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES_ERROR;
+				CLANG_WARN_OBJC_INTERFACE_IVARS = YES_ERROR;
+				CLANG_WARN_SEMICOLON_BEFORE_METHOD_BODY = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES_AGGRESSIVE;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0B01C1FF1CB86CF700A6BA19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7332797EED90BC5BB2D811 /* Pods-TachyonSampleApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				INFOPLIST_FILE = TachyonSampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linkedin.TachyonSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/TachyonSampleApp/Tachyon-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		0B01C2001CB86CF700A6BA19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7369C165CA5865902C167A89 /* Pods-TachyonSampleApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				INFOPLIST_FILE = TachyonSampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linkedin.TachyonSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/TachyonSampleApp/Tachyon-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		A16A762E225FAEBF00ACF6BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 57Y47U492U;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = TachyonUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = linkedin.TachyonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "TachyonUITests/TachyonUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TachyonSampleApp;
+			};
+			name = Debug;
+		};
+		A16A762F225FAEBF00ACF6BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 57Y47U492U;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = TachyonUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = linkedin.TachyonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TachyonUITests/TachyonUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TachyonSampleApp;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A18DC41E22372C02002812B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3785AD2D8D34BBF5A6688516 /* Pods-TachyonTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = TachyonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linkedin.TachyonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "TachyonTests/TachyonTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A18DC41F22372C02002812B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C32F67A9B0FA2E4360FF2301 /* Pods-TachyonTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = TachyonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linkedin.TachyonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "TachyonTests/TachyonTests-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B01C1CB1CB86C3700A6BA19 /* Build configuration list for PBXProject "Tachyon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B01C1D71CB86C3700A6BA19 /* Debug */,
+				0B01C1D81CB86C3700A6BA19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B01C1D91CB86C3700A6BA19 /* Build configuration list for PBXNativeTarget "Tachyon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B01C1DA1CB86C3700A6BA19 /* Debug */,
+				0B01C1DB1CB86C3700A6BA19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B01C1FE1CB86CF700A6BA19 /* Build configuration list for PBXNativeTarget "TachyonSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B01C1FF1CB86CF700A6BA19 /* Debug */,
+				0B01C2001CB86CF700A6BA19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A16A762D225FAEBF00ACF6BC /* Build configuration list for PBXNativeTarget "TachyonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A16A762E225FAEBF00ACF6BC /* Debug */,
+				A16A762F225FAEBF00ACF6BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A18DC42022372C02002812B3 /* Build configuration list for PBXNativeTarget "TachyonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A18DC41E22372C02002812B3 /* Debug */,
+				A18DC41F22372C02002812B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B01C1C81CB86C3700A6BA19 /* Project object */;
+}
