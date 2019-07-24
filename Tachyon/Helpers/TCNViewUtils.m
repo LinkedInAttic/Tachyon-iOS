@@ -11,7 +11,7 @@
         return;
     }
 
-    for (UIView *subview in view.subviews) {
+    for (UIView *const subview in view.subviews) {
         CGRect subviewRTLFrame = subview.frame;
         subviewRTLFrame.origin.x = CGRectGetWidth(view.frame) - CGRectGetMaxX(subview.frame);
         subview.frame = subviewRTLFrame;
