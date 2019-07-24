@@ -4,7 +4,7 @@
 @interface TCNViewUtils : NSObject
 
 /**
- @return YES if the @c UIApplication layout direction is right to left.
+ @return @c YES if the @c UIApplication layout direction is right to left.
  */
 + (BOOL)isLayoutDirectionRTL;
 
