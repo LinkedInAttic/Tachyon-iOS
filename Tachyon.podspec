@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'Tachyon'
-  spec.version = '0.0.22'
+  spec.version = '0.0.23'
   spec.requires_arc = true
   spec.platform = :ios, '10.0'
   spec.summary = 'Tachyon provides configurable UI components commonly used in calendar features and applications.'
