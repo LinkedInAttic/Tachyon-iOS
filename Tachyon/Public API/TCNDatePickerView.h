@@ -31,11 +31,6 @@
 @property (nonatomic, strong, nonnull, readonly) NSDate *selectedDate;
 
 /**
- True if the device is using RTL layout.
- */
-@property (nonatomic, assign, class, readonly) BOOL isRightToLeftLayout;
-
-/**
  Requests the height required by the date picker given @c config. The date picker should have its height
  set to this value to ensure correct layout.
 

@@ -1,4 +1,5 @@
 #import "TCNEventCell.h"
+#import "TCNViewUtils.h"
 
 @interface TCNEventCell ()
 
@@ -54,7 +55,7 @@ static const NSInteger CornerRadius = 2.0f;
 
 + (nonnull UILabel *)labelWithSuperview:(nonnull UICollectionViewCell *)superview {
     UILabel *const label = [[UILabel alloc] init];
-    label.textAlignment = NSTextAlignmentLeft;
+    label.textAlignment = NSTextAlignmentNatural;
     label.lineBreakMode = NSLineBreakByTruncatingTail;
     [superview.contentView addSubview:label];
     return label;
@@ -116,6 +117,8 @@ static const NSInteger CornerRadius = 2.0f;
 
         self.cancelButton.imageEdgeInsets = UIEdgeInsetsMake(insetDimension, insetDimension, insetDimension, insetDimension);
     }
+
+    [TCNViewUtils layoutSubviewsForRTL:self];
 }
 
 - (void)prepareForReuse {

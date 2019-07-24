@@ -14,6 +14,7 @@
 		0B01C2081CB86E4D00A6BA19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B01C2071CB86E4D00A6BA19 /* LaunchScreen.xib */; };
 		525D81084E6D197D0F06D69E /* Pods_TachyonSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539F5795600E54578F0B33E4 /* Pods_TachyonSampleApp.framework */; };
 		7EBB3E42F4F35DBFBBD8E1F7 /* Pods_TachyonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42BDDEEEA092EDBE61B5CF2 /* Pods_TachyonTests.framework */; };
+		8BD591EEA5BCB414B7A8C4B0 /* Pods_TachyonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62581D338BEA300690517415 /* Pods_TachyonUITests.framework */; };
 		A11E7A7E225D48B3003FAB5D /* TCNDayViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E7A7D225D48B3003FAB5D /* TCNDayViewTests.m */; };
 		A11E7A81225D5800003FAB5D /* TCNDayViewTestsViewProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E7A80225D5800003FAB5D /* TCNDayViewTestsViewProvider.m */; };
 		A11E7A83225ECD89003FAB5D /* TCNEventCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E7A82225ECD89003FAB5D /* TCNEventCellTests.m */; };
@@ -22,6 +23,7 @@
 		A17F1C6B22162E400026939B /* SampleEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F1C6A22162E400026939B /* SampleEvents.swift */; };
 		A18DC41B22372C02002812B3 /* libTachyon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B01C1D01CB86C3700A6BA19 /* libTachyon.a */; };
 		A18DC42322372DF6002812B3 /* TCNEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18DC42222372DF6002812B3 /* TCNEventTests.swift */; };
+		A1B9840B22E90E5A00233F89 /* TCNViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B9840A22E90E5A00233F89 /* TCNViewUtils.m */; };
 		A1D158902249B285008A4E50 /* TCNAllDayViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D158882249B284008A4E50 /* TCNAllDayViewLayout.m */; };
 		A1D158912249B285008A4E50 /* TCNDecorationViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D1588D2249B285008A4E50 /* TCNDecorationViewLayoutAttributes.m */; };
 		A1D158922249B285008A4E50 /* TCNDayViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D1588E2249B285008A4E50 /* TCNDayViewLayout.m */; };
@@ -119,6 +121,8 @@
 		A18DC41A22372C02002812B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A18DC42122372DF5002812B3 /* TachyonTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TachyonTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		A18DC42222372DF6002812B3 /* TCNEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCNEventTests.swift; sourceTree = "<group>"; };
+		A1B9840922E90E5A00233F89 /* TCNViewUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCNViewUtils.h; sourceTree = "<group>"; };
+		A1B9840A22E90E5A00233F89 /* TCNViewUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCNViewUtils.m; sourceTree = "<group>"; };
 		A1D158882249B284008A4E50 /* TCNAllDayViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNAllDayViewLayout.m; sourceTree = "<group>"; };
 		A1D158892249B285008A4E50 /* TCNDayViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNDayViewLayout.h; sourceTree = "<group>"; };
 		A1D1588A2249B285008A4E50 /* TCNAllDayViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNAllDayViewLayout.h; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD591EEA5BCB414B7A8C4B0 /* Pods_TachyonUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +319,8 @@
 				A1D158A92249B2AA008A4E50 /* TCNMacros.h */,
 				A1D158A82249B2AA008A4E50 /* TCNNumberHelper.h */,
 				A1D158AA2249B2AA008A4E50 /* TCNNumberHelper.m */,
+				A1B9840922E90E5A00233F89 /* TCNViewUtils.h */,
+				A1B9840A22E90E5A00233F89 /* TCNViewUtils.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -481,6 +488,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A16A762D225FAEBF00ACF6BC /* Build configuration list for PBXNativeTarget "TachyonUITests" */;
 			buildPhases = (
+				5A445FE3EA5ECD0B22D8779B /* [CP] Check Pods Manifest.lock */,
 				A16A7622225FAEBF00ACF6BC /* Sources */,
 				A16A7623225FAEBF00ACF6BC /* Frameworks */,
 				A16A7624225FAEBF00ACF6BC /* Resources */,
@@ -634,6 +642,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TachyonTests/Pods-TachyonTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5A445FE3EA5ECD0B22D8779B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TachyonUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7B938AD6EF0AC1D104301BD3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -682,6 +708,7 @@
 				A1D158BD2249B2C2008A4E50 /* TCNDatePickerConfig.m in Sources */,
 				A1D158AC2249B2AA008A4E50 /* TCNNumberHelper.m in Sources */,
 				A1D158922249B285008A4E50 /* TCNDayViewLayout.m in Sources */,
+				A1B9840B22E90E5A00233F89 /* TCNViewUtils.m in Sources */,
 				A1D158A22249B29F008A4E50 /* TCNDayViewGridlineView.m in Sources */,
 				A1D158A52249B29F008A4E50 /* TCNDatePickerSelectionIndicatorView.m in Sources */,
 				A1D158BC2249B2C2008A4E50 /* TCNDatePickerView.m in Sources */,
@@ -874,6 +901,7 @@
 		};
 		A16A762E225FAEBF00ACF6BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A9BE750B8E76E13488187C3 /* Pods-TachyonUITests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -941,6 +969,7 @@
 		};
 		A16A762F225FAEBF00ACF6BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 752A5760F42ADD454BE60E1D /* Pods-TachyonUITests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
