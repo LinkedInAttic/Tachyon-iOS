@@ -15,7 +15,7 @@
  to render any events at this index path.
 
  @param collectionView The calling collection view.
- @param layout The calling layout.
+ @param collectionViewLayout The calling layout.
  @param indexPath The index path for which to return information.
  @return An @c NSDate start time.
  */
@@ -28,7 +28,7 @@
  to render any events at this index path.
 
  @param collectionView The calling collection view.
- @param layout The calling layout.
+ @param collectionViewLayout The calling layout.
  @param indexPath The index path for which to return information.
  @return An @c NSDate end time.
  */
@@ -41,7 +41,7 @@
  at that index path. If false, this event will lay on top of other events in its time slot.
 
  @param collectionView The calling collection view.
- @param layout The calling layout.
+ @param collectionViewLayout The calling layout.
  @param indexPath The index path for which to return information.
  @return YES if the event should have layout adjusted, NO otherwise.
  */
