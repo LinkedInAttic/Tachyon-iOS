@@ -9,7 +9,7 @@
 + (BOOL)isLayoutDirectionRTL;
 
 /**
- Recursively layouts this view and its subviews for right-to-left support.
+ Recursively lays out this view and its subviews for right-to-left support.
 
  If the application's layout direction is not RTL, this is a no-op.
 
