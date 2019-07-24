@@ -1,8 +1,8 @@
 #import "TCNDatePickerDataSource.h"
 #import "TCNDatePickerDayView.h"
-#import "TCNDatePickerView.h"
 #import "TCNMacros.h"
 #import "TCNDateUtil.h"
+#import "TCNViewUtils.h"
 
 @interface TCNDatePickerDataSource ()
 
@@ -37,7 +37,7 @@ static const int DaysInAWeek = 7;
 #pragma mark - Static Helpers
 
 + (NSInteger)datePickerSectionPreviousWeek {
-    return TCNDatePickerView.isRightToLeftLayout ? 2 : 0;
+    return [TCNViewUtils isLayoutDirectionRTL] ? 2 : 0;
 }
 
 + (NSInteger)datePickerSectionActiveWeek {
@@ -45,7 +45,7 @@ static const int DaysInAWeek = 7;
 }
 
 + (NSInteger)datePickerSectionNextWeek {
-    return TCNDatePickerView.isRightToLeftLayout ? 0 : 2;
+    return [TCNViewUtils isLayoutDirectionRTL] ? 0 : 2;
 }
 
 #pragma mark - Methods

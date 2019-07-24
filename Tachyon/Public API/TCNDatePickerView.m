@@ -7,6 +7,7 @@
 #import "TCNMacros.h"
 #import "TCNNumberHelper.h"
 #import "TCNDatePickerLayout.h"
+#import "TCNViewUtils.h"
 
 @interface TCNDatePickerView () <UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, TCNDatePickerLayoutDelegate>
 
@@ -69,10 +70,6 @@ static const CGFloat AdditionalTitleLabelHeight = 1.0f;
 }
 
 #pragma mark - Class Methods
-
-+ (BOOL)isRightToLeftLayout {
-    return [UIApplication sharedApplication].userInterfaceLayoutDirection == UIUserInterfaceLayoutDirectionRightToLeft;
-}
 
 + (CGFloat)heightRequiredForConfig:(nonnull TCNDatePickerConfig *)config {
     return (3 * VerticalInterItemSpacing)
@@ -227,7 +224,7 @@ static const CGFloat AdditionalTitleLabelHeight = 1.0f;
 }
 
 - (void)scrollToActiveWeek {
-    const UICollectionViewScrollPosition scrollPosition = [TCNDatePickerView isRightToLeftLayout]
+    const UICollectionViewScrollPosition scrollPosition = [TCNViewUtils isLayoutDirectionRTL]
     ? UICollectionViewScrollPositionRight
     : UICollectionViewScrollPositionLeft;
     [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:[TCNDatePickerDataSource datePickerSectionActiveWeek]]
