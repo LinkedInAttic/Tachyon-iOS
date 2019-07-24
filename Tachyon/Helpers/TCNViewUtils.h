@@ -5,6 +5,8 @@
 
 /**
  @return @c YES if the @c UIApplication layout direction is right to left.
+ 
+ @note This should only be called on the main thread.
  */
 + (BOOL)isLayoutDirectionRTL;
 
