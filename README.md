@@ -32,7 +32,7 @@ This is the calendar view of a single day, which can display events or time slot
 ### Installation
 Add the following line to your Podfile:
 ```Ruby
-pod 'Tachyon', :git => 'https://github.com/linkedin/Tachyon-iOS.git'
+pod 'Tachyon'
 ```
 
 Then, run `pod install`.
